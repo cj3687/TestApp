@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in DataHelper.getDataFromURL(urlString2:):DataHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "array[0]">
+            </PersistentString>
+            <PersistentString
+               value = "array[0][0]">
+            </PersistentString>
+            <PersistentString
+               value = "array.flatMap { $0 }">
+            </PersistentString>
+            <PersistentString
+               value = "result[&quot;0&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "array[0][&quot;Brand&quot;] as? String">
+            </PersistentString>
+            <PersistentString
+               value = "response.value(forKey: &quot;DeviceName&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in DataHelper.getJSONDataFromURL(urlString2:):DataHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+            <PersistentString
+               value = "JSON(data: response.result.value)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

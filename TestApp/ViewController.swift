@@ -49,7 +49,7 @@ class ViewController: UIViewController {
 //                EmployeeEntity.shared.toString(employee: eachEmployee)
 //            }
 //        }
-        DataHelper.shared.getJSONDataFromURL(urlString2: "432432432")
+        let jsonString = DataHelper.shared.getDataFromURL(urlString2: "432432432")
         print("Before update...")
         if let departmentQuery = DepartmentEntity.shared.filter() {
             for eachDepartment in departmentQuery {
