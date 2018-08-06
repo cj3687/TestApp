@@ -12,6 +12,7 @@ target 'TestApp' do
 	#network
 	pod 'Alamofire', '~> 4.4'
 	pod 'AlamofireNetworkActivityLogger'
+	pod 'AlamofireObjectMapper'
 
 	#tab bar
 	pod 'SwipeableTabBarController'

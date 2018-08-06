@@ -3,6 +3,28 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in DataHelper.getJSONDataFromURL(urlString2:):DataHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value">
+            </PersistentString>
+            <PersistentString
+               value = "JSON(data: response.result.value)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in SettingsViewController.updatePhoneList(_:):SettingsViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in DataHelper.getDataFromURL(urlString2:):DataHelper.swift">
          <PersistentStrings>
             <PersistentString
@@ -26,13 +48,35 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in DataHelper.getJSONDataFromURL(urlString2:):DataHelper.swift">
+         contextName = "closure #1 in DataHelper.getDataFromURL(urlString2:completion:failureCompletion:):DataHelper.swift">
          <PersistentStrings>
             <PersistentString
-               value = "response.result.value">
+               value = "array.flatMap { $0[&quot;name&quot;] as? String }">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SettingsViewController.updatePhoneList(_:):SettingsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "device[&quot;DeviceName&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in DataHelper.getDataFromURL&lt;A&gt;(urlString:completion:failureCompletion:):DataHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.data">
             </PersistentString>
             <PersistentString
-               value = "JSON(data: response.result.value)">
+               value = "self.device">
+            </PersistentString>
+            <PersistentString
+               value = "res">
+            </PersistentString>
+            <PersistentString
+               value = "response.debugDescription">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
