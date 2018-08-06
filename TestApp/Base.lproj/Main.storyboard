@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="356" y="-573.46326836581716"/>
         </scene>
-        <!--Users-->
+        <!--Devices-->
         <scene sceneID="0QE-FD-JCv">
             <objects>
-                <tableViewController title="Users" id="PiR-2e-h8p" sceneMemberID="viewController">
+                <tableViewController title="Users" id="PiR-2e-h8p" userLabel="Devices" customClass="DevicesCustomTableView" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Rv-52-nsj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="502"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
