@@ -6,18 +6,21 @@ PODS:
     - SQLite.swift/standard (= 0.11.5)
   - SQLite.swift/standard (0.11.5)
   - SwiftyJSON (4.1.0)
+  - SwipeableTabBarController (1.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - AlamofireNetworkActivityLogger
   - SQLite.swift (from `https://github.com/stephencelis/SQLite.swift.git`)
   - SwiftyJSON
+  - SwipeableTabBarController
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireNetworkActivityLogger
     - SwiftyJSON
+    - SwipeableTabBarController
 
 EXTERNAL SOURCES:
   SQLite.swift:
@@ -33,7 +36,8 @@ SPEC CHECKSUMS:
   AlamofireNetworkActivityLogger: 6f3076652ab7fa6c819b59be08ea038d339e36d8
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  SwipeableTabBarController: fb724c1e08ea6125c01d7f9ef9dc90f33b12f8bb
 
-PODFILE CHECKSUM: 048ad85262f7c469d684d1e3413c7c92c856b48b
+PODFILE CHECKSUM: 30f70b643710b1547a4d8ac95809cfee93f6cd94
 
 COCOAPODS: 1.5.0

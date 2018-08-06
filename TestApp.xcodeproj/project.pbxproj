@@ -16,6 +16,7 @@
 		18AFD75B208C170400CDC78F /* DepartmentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFD75A208C170400CDC78F /* DepartmentEntity.swift */; };
 		18AFD75D208C1A2600CDC78F /* EmployeeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFD75C208C1A2600CDC78F /* EmployeeEntity.swift */; };
 		34117AB78CECB4BB33821449 /* Pods_TestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C30E6253E4C423960A67F5 /* Pods_TestApp.framework */; };
+		847FB245211811D400515572 /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FB244211811D400515572 /* Designable.swift */; };
 		84BC379721131AD4001BDB9C /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC379621131AD4001BDB9C /* DataHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		18AFD75C208C1A2600CDC78F /* EmployeeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeEntity.swift; sourceTree = "<group>"; };
 		4E67E7B0480AAAB2EE1114D5 /* Pods-TestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.release.xcconfig"; sourceTree = "<group>"; };
 		819E4131918A6598C6B04979 /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		847FB244211811D400515572 /* Designable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
 		84BC379621131AD4001BDB9C /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		F9C30E6253E4C423960A67F5 /* Pods_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 				18AFD759208C16DB00CDC78F /* Database */,
 				18AFD751208C128E00CDC78F /* Info.plist */,
 				18AFD74E208C128E00CDC78F /* LaunchScreen.storyboard */,
+				847FB244211811D400515572 /* Designable.swift */,
 				18AFD749208C128C00CDC78F /* Main.storyboard */,
 				18AFD747208C128C00CDC78F /* ViewController.swift */,
 				84BC379621131AD4001BDB9C /* DataHelper.swift */,
@@ -188,6 +191,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -195,6 +199,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -227,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18AFD758208C158400CDC78F /* Database.swift in Sources */,
+				847FB245211811D400515572 /* Designable.swift in Sources */,
 				18AFD75D208C1A2600CDC78F /* EmployeeEntity.swift in Sources */,
 				18AFD748208C128C00CDC78F /* ViewController.swift in Sources */,
 				84BC379721131AD4001BDB9C /* DataHelper.swift in Sources */,
@@ -379,10 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8USE8GJ9P;
 				INFOPLIST_FILE = TestApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.rostovm.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -398,10 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8USE8GJ9P;
 				INFOPLIST_FILE = TestApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.rostovm.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

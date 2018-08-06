@@ -1,7 +1,8 @@
 import UIKit
 import SQLite3
+import SwipeableTabBarController
 
-class ViewController: UIViewController {
+class ViewController: SwipeableTabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +74,11 @@ class ViewController: UIViewController {
                 print(DepartmentEntity.shared.toString(department: eachDepartment))
             }
         }
+        
+        selectedIndex = 1
+        setSwipeAnimation(type: SwipeAnimationType.sideBySide)
+        setTapAnimation(type: SwipeAnimationType.sideBySide)
+        setDiagonalSwipe(enabled: false)
         
     }
 
