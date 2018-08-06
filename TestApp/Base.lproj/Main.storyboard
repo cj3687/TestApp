@@ -65,7 +65,7 @@
                         <sections>
                             <tableViewSection id="gzE-wY-IyN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="104" id="vUL-p6-nU8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="104" id="vUL-p6-nU8" customClass="DeviceCustomCell" customModule="TestApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="7.5" width="375" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vUL-p6-nU8" id="xZH-v5-F6u">
@@ -143,6 +143,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="deviceDescription" destination="L7b-rz-aaf" id="7ru-g1-Ajr"/>
+                                            <outlet property="devicePhoto" destination="zJW-1g-Pco" id="qOG-K9-H40"/>
+                                            <outlet property="deviceTitle" destination="wBB-AJ-qwh" id="glS-H3-Kks"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="104" id="iJp-Am-5jr">
                                         <rect key="frame" x="0.0" y="111.5" width="375" height="104"/>

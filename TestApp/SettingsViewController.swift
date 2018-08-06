@@ -26,7 +26,6 @@ class SettingsViewController: UITableViewController {
         
         DataHelper.shared.getDataFromURL(urlString: "https://fonoapi.freshpixl.com/v1/getdevice", parameters: parameters, completion: { response in
             for device in response {
-                print(device)
                 DeviceEntity.shared.insert(name: device["DeviceName"]!,
                                            resolution: device["resolution"]!,
                                            announced: device["announced"]!,
