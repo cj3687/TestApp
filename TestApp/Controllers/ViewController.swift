@@ -6,15 +6,14 @@ class ViewController: SwipeableTabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Before update...")
-        if let departmentQuery = DeviceEntity.shared.filter() {
+        if let departmentQuery = DeviceEntity.shared.queryAll() {
             for eachDepartment in departmentQuery {
-                print(DeviceEntity.shared.toString(device: eachDepartment))
-                
+                //print(DeviceEntity.shared.toString(device: eachDepartment))
+                DeviceEntity.shared.fillList(device: eachDepartment)
             }
         }
-        selectedIndex = 0
+        
+        selectedIndex = 1
         setSwipeAnimation(type: SwipeAnimationType.sideBySide)
         setTapAnimation(type: SwipeAnimationType.sideBySide)
         setDiagonalSwipe(enabled: false)
@@ -35,12 +34,8 @@ class ViewController: SwipeableTabBarController {
 //            }
 //        }
         
-        if let departmentQuery = DeviceEntity.shared.queryAll() {
-            for eachDepartment in departmentQuery {
-                print(DeviceEntity.shared.toString(device: eachDepartment))
-            }
-        }
         
+        //print(DeviceEntity.shared.devicesList)
     }
 
     override func didReceiveMemoryWarning() {

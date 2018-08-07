@@ -3,10 +3,40 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DeviceEntity.shared.devicesList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "response.result">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DeviceEntity.fillList(device:):DeviceEntity.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "devicesList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DevicesCustomTableView.tableView(_:numberOfRowsInSection:):DevicesCustomTableView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "devices">
+            </PersistentString>
+            <PersistentString
+               value = "DeviceEntity.shared.devicesList">
+            </PersistentString>
+            <PersistentString
+               value = "DeviceEntity.shared.devicesList!.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -48,6 +78,20 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "DevicesCustomTableView.tableView(_:cellForRowAt:):DevicesCustomTableView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DeviceEntity.shared.devicesList![indexPath.row]">
+            </PersistentString>
+            <PersistentString
+               value = "device[&quot;DeviceName&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "device[&quot;name&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in DataHelper.getDataFromURL(urlString2:completion:failureCompletion:):DataHelper.swift">
          <PersistentStrings>
             <PersistentString
@@ -60,6 +104,9 @@
          <PersistentStrings>
             <PersistentString
                value = "device[&quot;DeviceName&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "textField.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

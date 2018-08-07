@@ -3,6 +3,8 @@ import SQLite
 
 class DeviceEntity {
     static let shared = DeviceEntity()
+    
+    public var devicesList: [[String: String]]?  = [[:]]
     private let tableDeviceInfo = Table("tableDeviceInfo")
     
     private let id = Expression<Int64>("id")
@@ -41,6 +43,19 @@ class DeviceEntity {
             print("Cannot insert new Device. Error: \(nserror), \(nserror.userInfo)")
             return nil
         }
+    }
+    
+    func delete(id: Int64) {
+        let device = tableDeviceInfo.filter(id == rowid)
+        
+        do {
+            try? DataBase.shared.connection?.run(device.delete())
+        }
+        catch {
+            let nserror = error as NSError
+            print("Cannot insert new Device. Error: \(nserror), \(nserror.userInfo)")
+        }
+        // DELETE FROM "users" WHERE ("id" = 1)
     }
     
     func filter() -> AnySequence<Row>? {
@@ -111,5 +126,14 @@ class DeviceEntity {
             announced: \(device[self.announced]),
             features: \(device[self.features])
             """)
+    }
+    func fillList(device: Row) {
+        var data: [String: String]? = [:]
+        data!["id"] = String(device[self.id])
+        data!["DeviceName"] = device[self.name]
+        data!["resolution"] = device[self.resolution]
+        data!["announced"] = device[self.announced]
+        data!["features_c"] = device[self.features]
+        devicesList?.append(data!)
     }
 }

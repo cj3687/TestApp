@@ -22,6 +22,7 @@
 		847FB24B211830AF00515572 /* DeviceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FB24A211830AF00515572 /* DeviceResponse.swift */; };
 		847FB24D211855AF00515572 /* DeviceCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FB24C211855AF00515572 /* DeviceCustomCell.swift */; };
 		847FB24F21185A8B00515572 /* DevicesCustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FB24E21185A8B00515572 /* DevicesCustomTableView.swift */; };
+		847FB2542119AD6200515572 /* customDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847FB2532119AD6200515572 /* customDeviceCell.xib */; };
 		84BC379721131AD4001BDB9C /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC379621131AD4001BDB9C /* DataHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		847FB24A211830AF00515572 /* DeviceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceResponse.swift; sourceTree = "<group>"; };
 		847FB24C211855AF00515572 /* DeviceCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCustomCell.swift; sourceTree = "<group>"; };
 		847FB24E21185A8B00515572 /* DevicesCustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesCustomTableView.swift; sourceTree = "<group>"; };
+		847FB2532119AD6200515572 /* customDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customDeviceCell.xib; sourceTree = "<group>"; };
 		84BC379621131AD4001BDB9C /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		F9C30E6253E4C423960A67F5 /* Pods_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,19 +83,15 @@
 		18AFD744208C128C00CDC78F /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				847FB2522119AD2F00515572 /* Helpers */,
+				847FB2512119AD1300515572 /* Controllers */,
+				847FB2502119ACF800515572 /* Interfaces */,
 				18AFD745208C128C00CDC78F /* AppDelegate.swift */,
 				18AFD74C208C128E00CDC78F /* Assets.xcassets */,
 				18AFD759208C16DB00CDC78F /* Database */,
 				18AFD751208C128E00CDC78F /* Info.plist */,
-				18AFD74E208C128E00CDC78F /* LaunchScreen.storyboard */,
-				847FB244211811D400515572 /* Designable.swift */,
 				847FB24C211855AF00515572 /* DeviceCustomCell.swift */,
 				847FB24E21185A8B00515572 /* DevicesCustomTableView.swift */,
-				847FB2482118293D00515572 /* BaseResponse.swift */,
-				18AFD749208C128C00CDC78F /* Main.storyboard */,
-				18AFD747208C128C00CDC78F /* ViewController.swift */,
-				847FB246211816BD00515572 /* SettingsViewController.swift */,
-				84BC379621131AD4001BDB9C /* DataHelper.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -124,6 +122,35 @@
 				4E67E7B0480AAAB2EE1114D5 /* Pods-TestApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		847FB2502119ACF800515572 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				18AFD74E208C128E00CDC78F /* LaunchScreen.storyboard */,
+				18AFD749208C128C00CDC78F /* Main.storyboard */,
+				847FB2532119AD6200515572 /* customDeviceCell.xib */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		847FB2512119AD1300515572 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18AFD747208C128C00CDC78F /* ViewController.swift */,
+				847FB246211816BD00515572 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		847FB2522119AD2F00515572 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				847FB2482118293D00515572 /* BaseResponse.swift */,
+				847FB244211811D400515572 /* Designable.swift */,
+				84BC379621131AD4001BDB9C /* DataHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847FB2542119AD6200515572 /* customDeviceCell.xib in Resources */,
 				18AFD750208C128E00CDC78F /* LaunchScreen.storyboard in Resources */,
 				18AFD74D208C128E00CDC78F /* Assets.xcassets in Resources */,
 				18AFD74B208C128C00CDC78F /* Main.storyboard in Resources */,
