@@ -17,25 +17,7 @@ class ViewController: SwipeableTabBarController {
         setSwipeAnimation(type: SwipeAnimationType.sideBySide)
         setTapAnimation(type: SwipeAnimationType.sideBySide)
         setDiagonalSwipe(enabled: false)
-//        print("Begin update...")
-//        if DeviceEntity.shared.update(id: 1,
-//                                          name: nil,
-//                                          resolution: "new address999",
-//                                          announced: "a new City999",
-//                                          features: "9999") {
-//            print("Update successful")
-//        } else {
-//            print("Update unsuccessful")
-//        }
-//        print("After update...")
-//        if let departmentQuery = DeviceEntity.shared.filter() {
-//            for eachDepartment in departmentQuery {
-//                print(DeviceEntity.shared.toString(device: eachDepartment))
-//            }
-//        }
-        
-        
-        //print(DeviceEntity.shared.devicesList)
+
     }
 
     override func didReceiveMemoryWarning() {

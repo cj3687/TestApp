@@ -21,18 +21,9 @@ class DevicesCustomTableView: UITableViewController {
         let device = DeviceEntity.shared.devicesList![indexPath.row + 1]
         
         //displaying values
-        cell.deviceTitle.text = device["DeviceName"]
+        cell.deviceTitle.text = device["DeviceName"]! + " " + device["announced"]!
         cell.deviceDescription.text = device["features_c"]
         
-        
-//        //displaying image
-//        Alamofire.request(hero.imageUrl!).responseImage { response in
-//            debugPrint(response)
-//
-//            if let image = response.result.value {
-//                cell.heroImage.image = image
-//            }
-//        }
         
         return cell
     }

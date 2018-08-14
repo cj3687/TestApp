@@ -45,11 +45,11 @@ class DeviceEntity {
         }
     }
     
-    func delete(id: Int64) {
-        let device = tableDeviceInfo.filter(id == rowid)
+    func delete(device: Row) {
+        let device1 = tableDeviceInfo.filter(id == device[self.id])
         
         do {
-            try? DataBase.shared.connection?.run(device.delete())
+            try? DataBase.shared.connection?.run(device1.delete())
         }
         catch {
             let nserror = error as NSError

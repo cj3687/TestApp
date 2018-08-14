@@ -63,6 +63,27 @@ class SettingsViewController: UITableViewController {
         
     }
     
+    @IBAction func clearAll(_ sender: Any) {
+        if let departmentQuery = DeviceEntity.shared.queryAll() {
+            for eachDepartment in departmentQuery {
+                //print(DeviceEntity.shared.toString(device: eachDepartment))
+                DeviceEntity.shared.delete(device: eachDepartment)
+                
+            }
+            let alertController = UIAlertController(title: "Success", message: "All data was deleted successfully", preferredStyle: .alert)
+            
+            // Create the actions
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+                UIAlertAction in
+                DeviceEntity.shared.devicesList = [[:]]
+                return;
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

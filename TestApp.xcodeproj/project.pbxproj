@@ -16,6 +16,7 @@
 		18AFD75B208C170400CDC78F /* DeviceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFD75A208C170400CDC78F /* DeviceEntity.swift */; };
 		18AFD75D208C1A2600CDC78F /* EmployeeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AFD75C208C1A2600CDC78F /* EmployeeEntity.swift */; };
 		34117AB78CECB4BB33821449 /* Pods_TestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C30E6253E4C423960A67F5 /* Pods_TestApp.framework */; };
+		847A88E52122ED2D00723CA5 /* AddPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A88E42122ED2D00723CA5 /* AddPhoneViewController.swift */; };
 		847FB245211811D400515572 /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FB244211811D400515572 /* Designable.swift */; };
 		847FB247211816BD00515572 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FB246211816BD00515572 /* SettingsViewController.swift */; };
 		847FB2492118293D00515572 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FB2482118293D00515572 /* BaseResponse.swift */; };
@@ -39,6 +40,7 @@
 		18AFD75C208C1A2600CDC78F /* EmployeeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeEntity.swift; sourceTree = "<group>"; };
 		4E67E7B0480AAAB2EE1114D5 /* Pods-TestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.release.xcconfig"; sourceTree = "<group>"; };
 		819E4131918A6598C6B04979 /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		847A88E42122ED2D00723CA5 /* AddPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhoneViewController.swift; sourceTree = "<group>"; };
 		847FB244211811D400515572 /* Designable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
 		847FB246211816BD00515572 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		847FB2482118293D00515572 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				18AFD747208C128C00CDC78F /* ViewController.swift */,
 				847FB246211816BD00515572 /* SettingsViewController.swift */,
+				847A88E42122ED2D00723CA5 /* AddPhoneViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				18AFD75D208C1A2600CDC78F /* EmployeeEntity.swift in Sources */,
 				847FB24B211830AF00515572 /* DeviceResponse.swift in Sources */,
 				18AFD748208C128C00CDC78F /* ViewController.swift in Sources */,
+				847A88E52122ED2D00723CA5 /* AddPhoneViewController.swift in Sources */,
 				84BC379721131AD4001BDB9C /* DataHelper.swift in Sources */,
 				18AFD75B208C170400CDC78F /* DeviceEntity.swift in Sources */,
 				18AFD746208C128C00CDC78F /* AppDelegate.swift in Sources */,
